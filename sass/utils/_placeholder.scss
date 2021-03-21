@@ -1,0 +1,16 @@
+%currentlink {
+    color: $active-color;
+    transition: color 250ms linear;
+}
+%currentlink-after {
+    &::after {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: $active-color;
+        border-radius: 2px;
+    }
+ }

@@ -1,0 +1,41 @@
+.join {
+    // margin-top: 12px;
+    margin-left: 70px;
+}
+.join__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 20px;
+    letter-spacing: 0.03em;
+    color: $main-light;
+}
+.join__list {
+    display: flex;
+}
+.join__item {
+    margin-right: 10px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.join__link {
+    background-color: $background-join;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $main-light;
+    transition: background-color 250ms linear;
+
+    &:focus,
+    &:hover {
+        background-color: $active-color;
+        transition: background-color 250ms linear;
+    }
+}

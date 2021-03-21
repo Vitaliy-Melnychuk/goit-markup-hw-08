@@ -1,0 +1,6 @@
+@mixin btns-flex($type: flex, $pad: 1px) {
+    display: $type;
+    align-items: center;
+    justify-content: center;
+    padding: $pad;
+}

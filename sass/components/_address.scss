@@ -1,0 +1,21 @@
+.address {
+    margin-top: 20px;
+}
+.address__link {
+    margin-top: 9px;
+    display: block;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: $text-light;
+
+    &:first-child {
+        color: $main-light;
+        margin-top: 0;
+    }
+
+    &:focus,
+    &:hover {
+        color: $active-color;
+        transition: color 250ms linear;
+    }
+}

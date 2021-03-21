@@ -1,0 +1,38 @@
+.info-list {
+    display: flex;
+    align-items: center;
+}
+.info-list__item {
+    margin-right: 50px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.info-list__link {
+    display: flex;
+    font-weight: 500;
+    color: $popular-color;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+    letter-spacing: 0.02em;
+    transition: color 250ms linear;
+
+    &:focus,
+    &:hover {
+        color: $active-color;
+        transition: color 250ms linear;
+    }
+}
+.info-list__icon {
+    fill: $fill-icon;
+    margin-right: 10px;
+    transition: color 250ms linear;
+
+    .info-list__link:focus &,
+    .info-list__link:hover &  {
+        fill: $active-color;
+        transition: fill 250ms linear;
+    }
+}

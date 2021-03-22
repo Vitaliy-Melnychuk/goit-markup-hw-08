@@ -342,6 +342,13 @@ template {
   display: none;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -349,13 +356,6 @@ body {
   font-size: 14px;
   line-height: 16px;
   color: #212121;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 ul {
@@ -578,7 +578,7 @@ a {
   line-height: 60px;
   color: #ffffff;
   text-transform: uppercase;
-  margin: 0 0 30px 0;
+  margin-bottom: 30px;
   letter-spacing: 0.06em;
 }
 
@@ -648,6 +648,12 @@ a {
 .work {
   text-align: center;
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 767px) {
+  .work {
+    display: none;
+  }
 }
 
 .work__title {
@@ -1190,8 +1196,8 @@ a {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   position: absolute;
-  width: 448px;
-  height: 501px;
+  width: 528px;
+  height: 581px;
   padding: 40px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);

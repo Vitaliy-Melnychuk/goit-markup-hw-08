@@ -1,6 +1,10 @@
 .work {
     text-align: center;
     padding-bottom: 94px;
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 }
 .work__title {
     font-weight: 700;

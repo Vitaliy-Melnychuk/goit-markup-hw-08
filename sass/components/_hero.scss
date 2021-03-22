@@ -3,10 +3,7 @@
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
-    background-image: linear-gradient(to right,
-     $hero-background,
-     $hero-background
-    ), url('../images/hero.jpg');
+    background-image: linear-gradient(to right, $hero-background, $hero-background), url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
     max-width: 1600px;
@@ -18,6 +15,6 @@
     line-height: 60px;
     color: $main-light;
     text-transform: uppercase;
-    margin: 0 0 30px 0;
+    margin-bottom: 30px;
     letter-spacing: 0.06em;
 }

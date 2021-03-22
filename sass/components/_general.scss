@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
@@ -5,11 +10,6 @@ body {
     font-size: 14px;
     line-height: 16px;
     color: $brand-color;
-}
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 ul {
     list-style: none;

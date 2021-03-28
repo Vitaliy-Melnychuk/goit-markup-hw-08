@@ -93,7 +93,8 @@
     }
 }
 .project-list__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
     height: 100%;
     &:focus,
     &:hover {
@@ -159,15 +160,11 @@
     margin: 0 24px 0;
 }
 .project-list__wrapper {
+    flex: 1 1 auto;
     padding: 20px 24px;
     border-left: 1px solid $border-light;
     border-right: 1px solid $border-light;
     border-bottom: 1px solid $border-light;
-    &--height {
-        @media screen and (min-width: 768px) and (max-width: 1199px) {
-            height: 146px;
-        }
-    }
 }
 .project-list__title {
     font-weight: 700;

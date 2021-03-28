@@ -19,6 +19,9 @@
     &--background {
         background: $background-btn;
     }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        display: block;
+    }
 }
 .btn__icon {
     margin-left: 10px;

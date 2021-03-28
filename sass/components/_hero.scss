@@ -1,20 +1,29 @@
 .hero {
-    height: 600px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    display: flex;
+    align-items: center;
     text-align: center;
+    height: 400px;
     background-image: linear-gradient(to right, $hero-background, $hero-background), url('../images/hero.jpg');
     background-size: cover;
     background-position: center;
     max-width: 1600px;
     margin: 0 auto;
+
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+    }
 }
 .hero__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: 60px;
+    font-size: 26px;
+    line-height: 42px;
     color: $main-light;
     text-transform: uppercase;
     margin-bottom: 30px;
     letter-spacing: 0.06em;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 60px;
+    }
 }

@@ -1,6 +1,16 @@
 .join {
-    // margin-top: 12px;
-    margin-left: 70px;
+    @media screen and (max-width: 767px) {
+        margin-top: 60px;
+    }
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+        margin-left: 165px;
+    }
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
 }
 .join__title {
     text-transform: uppercase;
@@ -14,6 +24,9 @@
 }
 .join__list {
     display: flex;
+    @media screen and (max-width: 1199px) {
+        justify-content: center;
+    }
 }
 .join__item {
     margin-right: 10px;

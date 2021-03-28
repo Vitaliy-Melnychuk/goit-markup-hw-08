@@ -4,11 +4,16 @@
 .form-data__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 23px;
     text-align: center;
     letter-spacing: 0.03em;
     color: $brand-color;
     margin-bottom: 12px;
+    @media screen and (max-width: 1199px) {
+        line-height: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+        line-height: 23px;
+    }
 }
 .form-data__label {
     display: flex;
@@ -128,17 +133,24 @@
         transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-
+.condition__link,
+.condition__text {
+    letter-spacing: 0.03em;
+    @media screen and (max-width: 1199px) {
+        font-size: 12px;
+        line-height: 14px;
+    }
+    @media screen and (min-width: 1200px) {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
 .condition__text {
     margin-left: 9px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
     color: $popular-color;
 }
 .condition__link {
     margin-left: 3px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
     color: $active-color;
     text-decoration: underline;
 }

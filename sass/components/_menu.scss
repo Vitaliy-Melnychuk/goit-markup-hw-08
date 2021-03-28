@@ -1,0 +1,63 @@
+.menu-container {
+    @media screen and (max-width: 767px) {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 45px 40px;
+        background-color:$main-light;
+        position: fixed;
+        height: 100%;
+        overflow-y: scroll;
+    }
+    @media screen and (min-width: 768px) {
+       display: flex;
+       justify-content: space-between;
+       flex-grow: 1;
+    }
+ }
+ .menu-container.is-open {
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
+ }
+.menu-button {
+    z-index: 2;
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background-color: $main-light;
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+.menu-button__icon {
+    display: block;
+    fill: $brand-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    .menu-button:focus &,
+    .menu-button:hover & {
+        fill: $active-color;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
+.menu-button__icon .menu-button__cross {
+    display: none;
+}
+.menu-button__icon.is-open .menu-button__cross {
+    display: block;
+}
+.menu-button__icon.is-open .menu-button__menu {
+    display: none;
+}

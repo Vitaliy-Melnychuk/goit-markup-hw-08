@@ -11,41 +11,75 @@
     <header class="header">
 
         <div class="container header__container">
-
-            <nav class="navigation">
+            <nav class="navigation-wrapper">
                 <a href="index.html" class="logo">Web<span class="logo__text">Studio</span></a>
-
-                <ul class="navigation__list">
-                    <li class="navigation__item">
-                        <a href="index.html" class="navigation__link">Студия</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="portfolio.html" class="navigation__link currentlink">Портфолио</a>
-                    </li>
-                    <li class="navigation__item">
-                        <a href="" class="navigation__link">Контакты</a>
-                    </li>
-                </ul>
+                <div class="menu-container" id="menu-container" data-menu>
+                    <div class="navigation">
+                        <ul class="navigation__list">
+                            <li class="navigation__item">
+                                <a href="index.html" class="navigation__link">Студия</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="portfolio.html" class="navigation__link currentlink">Портфолио</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a href="" class="navigation__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info">
+                        <ul class="info-list">
+                            <li class="info-list__item info-list__item--order">
+                                <a href="mailto:info@devstudio.com" class="info-list__link">
+                                    <svg class="info-list__icon" width="16" height="12">
+                                        <use href="./images/icons.svg#icon-mail"></use>
+                                    </svg>
+                                    info@devstudio.com
+                                </a>
+                            </li>
+                            <li class="info-list__item">
+                                <a href="tel:+380961111111" class="info-list__link">
+                                    <svg class="info-list__icon" width="10" height="16">
+                                        <use href="./images/icons.svg#icon-smartphone"></use>
+                                    </svg>
+                                    +38 096 111 11 11
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="social-networks">
+                        <ul class="social-networks__list">
+                            <li class="social-networks__item">
+                                <a href="" class="social-networks__link">Instagram</a>
+                            </li>
+                            <li class="social-networks__item">
+                                <a href="" class="social-networks__link">Twitter</a>
+                            </li>
+                            <li class="social-networks__item">
+                                <a href="" class="social-networks__link">Facebook</a>
+                            </li>
+                            <li class="social-networks__item">
+                                <a href="" class="social-networks__link social-networks__link--after">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button
+                type="button"
+                class="menu-button"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-open close-icon>
+                    <svg
+                        class="menu-button__icon"
+                        width="24" height="16"
+                        aria-label="Переключатель мобильного меню"
+                        data-icon>
+                        <use class="menu-button__cross" href="./images/icons.svg#icon-cross"></use>
+                        <use class="menu-button__menu" href="./images/icons.svg#icon-menu"></use>
+                    </svg>
+                </button>
             </nav>
-
-            <ul class="info-list">
-                <li class="info-list__item">
-                    <a href="mailto:info@devstudio.com" class="info-list__link">
-                        <svg class="info-list__icon" width="16" height="12">
-                            <use href="./images/icons.svg#icon-mail"></use>
-                        </svg>
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="info-list__item">
-                    <a href="tel:+380961111111" class="info-list__link">
-                        <svg class="info-list__icon" width="10" height="16">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
         </div>
     </header>
 
@@ -63,12 +97,12 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__thumb">
-                            <img src="images/tehno.jpg" alt="Ноутбук" width="370" class="project-list__img">
+                            <img src="images/tehno.jpg" alt="Ноутбук" class="project-list__img">
                             <div class="project-list__overlay">
                                 <p class="project-list__text">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
                         </div>
-                        <div class="project-list__wrapper">
+                        <div class="project-list__wrapper project-list__wrapper--height">
                             <h3 class="project-list__title">Технокряк</h3>
                             <p class="project-list__content">Веб-сайт</p>
                         </div>
@@ -77,7 +111,7 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__thumb">
-                            <img src="images/orlean.jpg" alt="Два баскетболиста" width="370" class="project-list__img">
+                            <img src="images/orlean.jpg" alt="Два баскетболиста" class="project-list__img">
                             <div class="project-list__overlay">
                                 <p class="project-list__text">New Orlean vs Golden Star. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -91,7 +125,7 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__thumb">
-                            <img src="images/seafood.jpg" alt="Логотип" width="370" class="project-list__img">
+                            <img src="images/seafood.jpg" alt="Логотип" class="project-list__img">
                             <div class="project-list__overlay">
                                 <p class="project-list__text">Ресторан Seafood это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -105,7 +139,7 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__thumb">
-                            <img src="images/prime.jpg" alt="Наушники" width="370" class="project-list__img">
+                            <img src="images/prime.jpg" alt="Наушники" class="project-list__img">
                             <div class="project-list__overlay">
                                 <p class="project-list__text">Проект Prime это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -119,7 +153,7 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__thumb">
-                            <img src="images/boxes.jpg" alt="Две коробки" width="370" class="project-list__img">
+                            <img src="images/boxes.jpg" alt="Две коробки" class="project-list__img">
                             <div class="project-list__overlay">
                                 <p class="project-list__text">Проект Boxes это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -133,7 +167,7 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__thumb">
-                            <img src="images/inspiration.jpg" alt="Монитор" width="370" class="project-list__img">
+                            <img src="images/inspiration.jpg" alt="Монитор" class="project-list__img">
                             <div class="project-list__overlay">
                                 <p class="project-list__text">Inspiration has no Borders это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -147,7 +181,7 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__thumb">
-                            <img src="images/limited.jpg" alt="Журнал" width="370" class="project-list__img">
+                            <img src="images/limited.jpg" alt="Журнал" class="project-list__img">
                             <div class="project-list__overlay">
                                 <p class="project-list__text">Издание Limited Edition это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -161,7 +195,7 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__thumb">
-                            <img src="images/lab.jpg" alt="Етикетка" width="370" class="project-list__img">
+                            <img src="images/lab.jpg" alt="Етикетка" class="project-list__img">
                             <div class="project-list__overlay">
                                 <p class="project-list__text">Проект LAB это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>
@@ -175,7 +209,7 @@
                 <li class="project-list__item">
                     <a href="" class="project-list__link">
                         <div class="project-list__thumb">
-                            <img src="images/growing.jpg" alt="Ноутбук" width="370" class="project-list__img">
+                            <img src="images/growing.jpg" alt="Ноутбук" class="project-list__img">
                             <div class="project-list__overlay">
                                 <p class="project-list__text">Growing business это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                             </div>

@@ -1,26 +1,43 @@
 .menu-container {
     @media screen and (max-width: 767px) {
+        z-index: 1;
         display: none;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        padding: 45px 40px;
         background-color:$main-light;
         position: fixed;
+        width: 100%;
         height: 100%;
-        overflow-y: scroll;
+        top: 0;
+        left: 0;
     }
     @media screen and (min-width: 768px) {
-       display: flex;
-       justify-content: space-between;
-       flex-grow: 1;
-    }
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+     }
  }
  .menu-container.is-open {
     @media screen and (max-width: 767px) {
         display: block;
     }
+ }
+ .menu-location {
+    @media screen and (max-width: 767px) {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 45px 40px;
+        background-color:$main-light;
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        flex-grow: 1;
+     }
  }
 .menu-button {
     z-index: 2;
@@ -40,6 +57,9 @@
     @media screen and (min-width: 768px) {
         display: none;
     }
+}
+.menu-button.is-open {
+    position: fixed;
 }
 .menu-button__icon {
     display: block;

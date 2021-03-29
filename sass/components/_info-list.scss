@@ -3,10 +3,6 @@
     @media screen and (max-width: 1199px) {
         flex-direction: column;
     }
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        padding-top: 21px;
-        padding-bottom: 21px;
-    }
 }
 .info-list__item {
    @media screen and (max-width: 767px) {
@@ -28,28 +24,17 @@
         }
     }
 }
-.info-list__link {
+.info-list__email,
+.info-list__tel {
     display: flex;
     font-weight: 500;
     color: $popular-color;
     align-items: center;
     letter-spacing: 0.02em;
     transition: color 250ms linear;
-    @media screen and (max-width: 767px) {
-        font-size: 34px;
-        line-height: 40px;
-        .info-list__item--order & {
-            font-size: 24px;
-            line-height: 28px;
-        }
-    }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
         font-size: 12px;
         line-height: 14px;
-        margin-top: 10px;
-        &:last-child {
-            margin-top: 0;
-        }
     }
     @media screen and (min-width: 1200px) {
         font-size: 14px;
@@ -63,6 +48,29 @@
         transition: color 250ms linear;
     }
 }
+.info-list__email {
+    @media screen and (max-width: 767px) {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-top: 21px;
+    }
+}
+.info-list__tel {
+    @media screen and (max-width: 479px) {
+        font-size: 24px;
+        line-height: 28px;
+    }
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+        font-size: 34px;
+        line-height: 40px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 21px;
+    }
+}
+
 .info-list__icon {
     @media screen and (max-width: 767px) {
         display: none;
@@ -71,8 +79,10 @@
     margin-right: 10px;
     transition: color 250ms linear;
 
-    .info-list__link:focus &,
-    .info-list__link:hover &  {
+    .info-list__email:focus &,
+    .info-list__email:hover &,
+    .info-list__tel:focus &,
+    .info-list__tel:hover &  {
         fill: $active-color;
         transition: fill 250ms linear;
     }
